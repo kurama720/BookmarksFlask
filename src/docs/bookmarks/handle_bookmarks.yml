@@ -1,0 +1,22 @@
+GET all the bookmarks or POST one
+---
+tags:
+  - Bookmarks
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200:
+    description: Bookmarks list
+
+  201:
+    description: Bookmark posted
+
+  400:
+    description: Invalid URL
+
+  409:
+    description: URL already exists

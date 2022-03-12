@@ -1,0 +1,19 @@
+UPDATE a specific bookmark
+---
+tags:
+  - Bookmarks
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200:
+    description: Bookmark was updated
+
+  400:
+    description: Invalid URL
+
+  404:
+    description: No such bookmark

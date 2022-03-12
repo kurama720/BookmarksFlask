@@ -1,0 +1,13 @@
+GET user's account info
+---
+tags:
+  - Authentication
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200:
+    description: User's info

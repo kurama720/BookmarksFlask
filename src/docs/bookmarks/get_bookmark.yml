@@ -1,0 +1,16 @@
+GET a specific bookmark
+---
+tags:
+  - Bookmarks
+
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200:
+    description: Bookmarks list
+
+  404:
+    description: No such bookmark
